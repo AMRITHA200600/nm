@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .project {
+      background-color: #fff;
+      margin: 20px 0;
+      padding: 15px;
+      border-left: 5px solid #333;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Doe</h1>
+    <p>Web Developer | Designer | Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm John Doe, a passionate web developer who loves building clean and responsive websites using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A simple personal website to showcase my projects and skills.</p>
+    </div>
+
+    <div class="project">
+      <h3>To-Do App</h3>
+      <p>A basic JavaScript to-do list app with add and remove functionality.</p>
+    </div>
+
+    <button onclick="showMore()">Show More Projects</button>
+    <div id="more-projects"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <strong>john.doe@example.com</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 John Doe. All rights reserved.
+  </footer>
+
+  <script>
+    function showMore() {
+      const moreProjects = document.getElementById("more-projects");
+      moreProjects.innerHTML = `
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>A simple weather app using vanilla JS and browser geolocation.</p>
+        </div>
+        <div class="project">
+          <h3>Calculator</h3>
+          <p>A basic calculator with standard math operations built with HTML, CSS, and JS.</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
